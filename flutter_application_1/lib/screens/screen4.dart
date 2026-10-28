@@ -30,12 +30,13 @@ class Screen4 extends StatelessWidget {
                 (cosas) => ListTile(
                   leading: const Icon(Icons.pets),
                   title: Text(cosas),
+                  subtitle: Text('Cositas lol'),
                   trailing: const Icon(Icons.arrow_forward_ios_outlined),
-                  tileColor: Colors.cyanAccent
+                  tileColor: Colors.cyanAccent,
                   textColor: Colors.amberAccent,
                 ),
               ),
-          Divider(),  
+          Divider(),
            ...animales
               .map(
                 (cosas) => ListTile(
@@ -44,6 +45,9 @@ class Screen4 extends StatelessWidget {
                   trailing: const Icon(Icons.arrow_forward_ios_outlined),
                   tileColor: Colors.lightBlue,
                   textColor: Colors.white54,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
                 ),
               ),    
         ],
